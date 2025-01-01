@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,79 +8,150 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
-            color: #333;
         }
+
         .container {
             width: 80%;
-            margin: 20px auto;
+            margin: 0 auto;
+            background: white;
             padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
+
         header {
             text-align: center;
-            margin-bottom: 30px;
+            padding: 20px 0;
         }
+
+        header img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
         header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #007bff;
-        }
-        header p {
-            margin: 5px 0;
-            font-size: 1.2em;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        section h2 {
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-            color: #007bff;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
             margin: 10px 0;
+            font-size: 2rem;
+            color: #333;
         }
-        a {
-            color: #007bff;
+
+        header p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list span {
+            background-color: #007BFF;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .contact a {
+            color: #007BFF;
             text-decoration: none;
         }
-        a:hover {
+
+        .contact a:hover {
             text-decoration: underline;
         }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
+            <img src="https://via.placeholder.com/100" alt="Profile Picture">
             <h1>Sambit Sahani</h1>
-            <p>Email: <a href="mailto:sambit.john2009@gmail.com">sambit.john2009@gmail.com</a></p>
-            <p>Location: Bangalore</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/sambit-sahani-12322753/" target="_blank">https://www.linkedin.com/in/sambit-sahani-12322753/</a></p>
+            <p>Email: sambit.john2009@gmail.com | Location: Bangalore | <a href="https://www.linkedin.com/in/sambit-sahani-12322753/" target="_blank">LinkedIn</a></p>
         </header>
 
-        <section>
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <p>Experienced DevOps Engineer with expertise in Kubernetes, CI/CD pipelines, cloud infrastructure, and log monitoring. Adept at setting up scalable and secure environments to support high-performance applications.</p>
+        </section>
+
+        <section class="section">
             <h2>Skills</h2>
+            <div class="skills-list">
+                <span>DevOps</span>
+                <span>Cloud Infrastructure</span>
+                <span>Kubernetes</span>
+                <span>Docker</span>
+                <span>CI/CD Pipelines</span>
+                <span>Terraform</span>
+                <span>Log Monitoring</span>
+                <span>Load Balancing</span>
+                <span>Linux</span>
+                <span>Database Management</span>
+                <span>Cassandra</span>
+                <span>Automation</span>
+                <span>Git</span>
+                <span>Jenkins</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Experience Highlights</h2>
             <ul>
-                <li>Design and deployment of Kubernetes clusters to host scalable and fault-tolerant applications.</li>
-                <li>Configuration of databases, including MySQL/PostgreSQL and multi-node Cassandra clusters.</li>
-                <li>Creation of CI/CD pipelines using Jenkins, GitLab CI/CD, and Azure DevOps for automated deployments.</li>
-                <li>Centralized log monitoring setup using ELK Stack and Prometheus/Grafana for real-time alerting and troubleshooting.</li>
-                <li>Load balancer configuration with HAProxy, NGINX, and cloud-native options for high availability and low latency.</li>
-                <li>Automation of deployment processes, reducing deployment time by 60%.</li>
-                <li>Expertise in Kubernetes auto-scaling policies and performance optimization for distributed systems.</li>
-                <li>Proficiency in troubleshooting, incident response, and defect management in production environments.</li>
+                <li>Designed and implemented a Kubernetes cluster for deploying scalable applications.</li>
+                <li>Set up and configured EOC application with associated databases, including Cassandra.</li>
+                <li>Developed CI/CD pipelines to automate build and deployment processes.</li>
+                <li>Integrated log monitoring solutions to improve application observability and troubleshooting.</li>
+                <li>Configured and managed load balancers to ensure application reliability and scalability.</li>
             </ul>
         </section>
+
+        <section class="section image-container">
+            <h2>Recent Projects</h2>
+            <img src="https://via.placeholder.com/400" alt="Kubernetes Cluster Diagram">
+            <p>Visual representation of a Kubernetes cluster architecture.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Sambit Sahani. All rights reserved.</p>
+        </footer>
     </div>
 </body>
+
 </html>
