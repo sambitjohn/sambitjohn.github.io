@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,141 +10,134 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            color: #333;
         }
-
         .container {
             width: 80%;
-            margin: 0 auto;
-            background: white;
+            margin: 20px auto;
+            background: #fff;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-
         header {
             text-align: center;
-            padding: 20px 0;
         }
-
-        header img {
-            width: 100px;
-            border-radius: 50%;
-        }
-
         header h1 {
             margin: 10px 0;
-            font-size: 2rem;
-            color: #333;
+            font-size: 2.5em;
+            color: #007bff;
         }
-
         header p {
-            font-size: 1rem;
-            color: #777;
+            margin: 5px 0;
+            font-size: 1.2em;
         }
-
-        .section {
-            margin-top: 20px;
-        }
-
-        .section h2 {
-            font-size: 1.5rem;
-            color: #333;
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skills-list span {
-            background-color: #007BFF;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 0.9rem;
-        }
-
-        .contact a {
-            color: #007BFF;
+        header a {
+            color: #007bff;
             text-decoration: none;
         }
-
-        .contact a:hover {
-            text-decoration: underline;
+        section {
+            margin-bottom: 20px;
         }
-
+        section h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
         footer {
             text-align: center;
             margin-top: 20px;
-            color: #777;
+            font-size: 0.9em;
+            color: #666;
         }
-
-        .image-container {
-            text-align: center;
-            margin-top: 20px;
+        .skills span {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px 5px 0 0;
+            font-size: 0.9em;
         }
-
-        .image-container img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 10px;
-        }
-
     </style>
 </head>
-
 <body>
     <div class="container">
         <header>
-            <img src="https://via.placeholder.com/100" alt="Profile Picture">
             <h1>Sambit Sahani</h1>
-            <p>Email: sambit.john2009@gmail.com | Location: Bangalore | <a href="https://www.linkedin.com/in/sambit-sahani-12322753/" target="_blank">LinkedIn</a></p>
+            <p>Bengaluru, Karnataka, India</p>
+            <p>Email: <a href="mailto:sambit.john2009@gmail.com">sambit.john2009@gmail.com</a></p>
+            <p>Phone: (+91) 8339095647</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sambit-sahani-12322753/" target="_blank">linkedin.com/in/sambit-sahani-12322753</a></p>
+            <p>Portfolio: <a href="https://sambitjohn.github.io/" target="_blank">sambitjohn.github.io</a></p>
         </header>
 
-        <section class="section">
+        <section>
             <h2>Professional Summary</h2>
-            <p>Experienced DevOps Engineer with expertise in Kubernetes, CI/CD pipelines, cloud infrastructure, and log monitoring. Adept at setting up scalable and secure environments to support high-performance applications.</p>
+            <p>Highly skilled and results-driven IT professional with 6 years of experience, including 2 years as a <strong>Big Data Engineer</strong> and 4 years as a <strong>DevOps Engineer</strong>. Proficient in automation, CI/CD pipeline creation, cloud infrastructure management, and container orchestration. Extensive expertise in tools such as <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Terraform</strong>, <strong>Jenkins</strong>, and <strong>AWS</strong>. Adept at optimizing system performance, bridging development and operations teams, and fostering efficiency.</p>
         </section>
 
-        <section class="section">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <span>DevOps</span>
-                <span>Cloud Infrastructure</span>
-                <span>Kubernetes</span>
-                <span>Docker</span>
-                <span>CI/CD Pipelines</span>
-                <span>Terraform</span>
-                <span>Log Monitoring</span>
-                <span>Load Balancing</span>
-                <span>Linux</span>
-                <span>Database Management</span>
-                <span>Cassandra</span>
-                <span>Automation</span>
-                <span>Git</span>
-                <span>Jenkins</span>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Experience Highlights</h2>
+        <section>
+            <h2>Experience</h2>
             <ul>
-                <li>Designed and implemented a Kubernetes cluster for deploying scalable applications.</li>
-                <li>Set up and configured EOC application with associated databases, including Cassandra.</li>
-                <li>Developed CI/CD pipelines to automate build and deployment processes.</li>
-                <li>Integrated log monitoring solutions to improve application observability and troubleshooting.</li>
-                <li>Configured and managed load balancers to ensure application reliability and scalability.</li>
+                <li><strong>DevOps Engineer</strong> | <em>Ericsson</em> | April 2021 – Present | Bengaluru, India</li>
+                <ul>
+                    <li>Designed and optimized <strong>CI/CD pipelines</strong> using Jenkins and GitLab CI/CD, streamlining software delivery processes.</li>
+                    <li>Automated infrastructure provisioning using <strong>Terraform</strong> and <strong>Ansible</strong>, ensuring consistency and scalability.</li>
+                    <li>Managed cloud-based infrastructure on <strong>AWS</strong>, focusing on cost optimization, security, and scalability.</li>
+                    <li>Deployed and orchestrated <strong>containerized applications</strong> using Docker and Kubernetes, ensuring high availability.</li>
+                    <li>Configured monitoring frameworks with <strong>Prometheus</strong>, <strong>Grafana</strong>, and <strong>Splunk</strong> to proactively address infrastructure issues.</li>
+                </ul>
+                <li><strong>Big Data Engineer</strong> | <em>TCS</em> | October 2012 – October 2014 | Hyderabad, India</li>
+                <ul>
+                    <li>Developed and optimized <strong>ETL pipelines</strong> using <strong>Apache Pig</strong> for large-scale data ingestion and transformation.</li>
+                    <li>Built and executed complex queries in <strong>Apache Hive</strong> to derive actionable insights from structured and semi-structured data.</li>
+                    <li>Engineered scalable data architecture on the <strong>Hadoop ecosystem</strong>, increasing data processing efficiency by 30%.</li>
+                </ul>
             </ul>
         </section>
 
-        <section class="section image-container">
-            <h2>Recent Projects</h2>
-            <img src="https://via.placeholder.com/400" alt="Kubernetes Cluster Diagram">
-            <p>Visual representation of a Kubernetes cluster architecture.</p>
+        <section>
+            <h2>Key Projects</h2>
+            <ul>
+                <li><strong>CBU COM Track 2</strong> | <em>Ericsson</em> | September 2023 – January 2025</li>
+                <ul>
+                    <li>Designed Kubernetes clusters for scalable microservices-based applications, ensuring seamless orchestration.</li>
+                    <li>Configured <strong>PostgreSQL</strong> and <strong>Cassandra</strong> databases for handling large-scale application data.</li>
+                    <li>Built robust <strong>CI/CD pipelines</strong> with Jenkins, automating build, test, and deployment processes.</li>
+                    <li>Implemented centralized logging with <strong>Prometheus</strong> and <strong>Grafana</strong>, enhancing monitoring and alerting.</li>
+                </ul>
+                <li><strong>COM Foundation DR</strong> | <em>Ericsson</em> | December 2022 – August 2023</li>
+                <ul>
+                    <li>Developed disaster recovery strategies, reducing downtime by 45% using cloud-based automated failover systems.</li>
+                    <li>Integrated security scanning and quality checks into CI/CD pipelines, ensuring compliance.</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>DevOps Tools</span>
+                <span>Kubernetes</span>
+                <span>Docker</span>
+                <span>Terraform</span>
+                <span>AWS</span>
+                <span>Jenkins</span>
+                <span>Python</span>
+                <span>Shell Scripting</span>
+                <span>Apache Hive</span>
+                <span>Apache Pig</span>
+                <span>Prometheus</span>
+                <span>Grafana</span>
+            </div>
         </section>
 
         <footer>
@@ -153,5 +145,4 @@
         </footer>
     </div>
 </body>
-
 </html>
